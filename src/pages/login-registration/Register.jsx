@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import toast from "react-hot-toast";
 import auth from "../../auth/firebase.config";
@@ -104,7 +104,7 @@ const Register = () => {
                 <div className="flex items-center justify-center py-4 text-center bg-gray-50 ">
                     <span className="text-sm text-gray-600 ">Already have an account? </span>
 
-                    <a href="#" className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign In</a>
+                    <Link to="/login" className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign In</Link>
                 </div>
             </div>
         </div>

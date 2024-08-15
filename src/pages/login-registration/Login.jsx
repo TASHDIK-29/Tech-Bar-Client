@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const Login = () => {
@@ -84,7 +84,7 @@ const Login = () => {
                 <div className="flex items-center justify-center py-4 text-center bg-gray-50 ">
                     <span className="text-sm text-gray-600 ">Do not have an account? </span>
 
-                    <a href="#" className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign Up</a>
+                    <Link to= '/register' className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign Up</Link>
                 </div>
             </div>
         </div>
