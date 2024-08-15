@@ -9,6 +9,9 @@ const ProductList = () => {
     const [minPrice, setMinPrice] = useState(null);
     const [maxPrice, setMaxPrice] = useState(null);
 
+    const [currentPage, setCurrentPage] = useState(0);
+    const [count, setCount] = useState(0);
+
 
 
 
@@ -19,22 +22,28 @@ const ProductList = () => {
                 brand,
                 category,
                 minPrice,
-                maxPrice
+                maxPrice,
+                currentPage
             }
         });
-        setProducts(response.data);
+        setProducts(response.data.product);
+        setCount(response.data.count);
     };
 
     useEffect(() => {
 
         fetchProducts();
 
-    }, [search, brand, category, minPrice, maxPrice]);
+    }, [search, brand, category, minPrice, maxPrice, currentPage]);
 
-    console.log(products);
+    console.log({ products, count });
+
+
+    const numberOfPages = Math.ceil(count / 6);
+    const pages = [...Array(numberOfPages).keys()];
 
     return (
-        <div>
+        <div className=' min-h-[90vh]'>
             <div className='flex justify-between'>
                 <input
                     type="text"
@@ -85,7 +94,7 @@ const ProductList = () => {
 
 
             </div>
-            <div>
+            <div className='mb-20'>
                 <h4>Products : {products.length}</h4>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {products?.map(({ _id, Ratings, ProductName, ProductCreationDate, Price, Image, Description, Category, Brand }) => (
@@ -132,6 +141,11 @@ const ProductList = () => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className="space-x-2 my-10 w-full flex justify-center">
+                {
+                    pages.map(i => <button className={currentPage === i ? 'bg-blue-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-orange-400 font-medium border-orange-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
+                }
             </div>
         </div>
     );
