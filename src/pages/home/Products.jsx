@@ -55,13 +55,13 @@ const ProductList = () => {
                         placeholder="Search products"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className='border-2 bg-slate-300 p-2 w-full'
+                        className='border-2 bg-slate-300 p-2 w-full shadow-md'
                     />
                 </div>
 
                 <div>
                     <h4>Filter by Brand</h4>
-                    <select className='border-2 w-full p-2 bg-slate-300' value={brand} onChange={(e) => setBrand(e.target.value)}>
+                    <select className='border-2 w-full p-2 bg-slate-300 shadow-md' value={brand} onChange={(e) => setBrand(e.target.value)}>
                         <option value="">Select Brand</option>
                         <option value="Apple">Apple</option>
                         <option value="Google">Google</option>
@@ -73,7 +73,7 @@ const ProductList = () => {
 
                 <div>
                     <h4>Filter by Category</h4>
-                    <select className='border-2 p-2 bg-slate-300 w-full' value={category} onChange={(e) => setCategory(e.target.value)}>
+                    <select className='border-2 p-2 bg-slate-300 w-full shadow-md' value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option value="">Select Category</option>
                         <option value="Computer">Computer</option>
                         <option value="Laptop">Laptop</option>
@@ -87,7 +87,7 @@ const ProductList = () => {
                 <div>
                     <h4>Min Price</h4>
                     <input
-                        className='border-2 w-full p-2 bg-slate-300'
+                        className='border-2 w-full p-2 bg-slate-300 shadow-md'
                         type="number"
                         placeholder="Min Price"
                         value={minPrice}
@@ -97,7 +97,7 @@ const ProductList = () => {
                 <div>
                     <h4>Max Price</h4>
                     <input
-                        className='border-2 w-full p-2 bg-slate-300'
+                        className='border-2 w-full p-2 bg-slate-300 shadow-md'
                         type="number"
                         placeholder="Max Price"
                         value={maxPrice}
@@ -107,7 +107,7 @@ const ProductList = () => {
 
                 <div>
                     <h4>Sort By</h4>
-                    <select className='border-2 w-full p-2 bg-slate-300' value={sort} onChange={(e) => {
+                    <select className='border-2 w-full p-2 bg-slate-300 shadow-md' value={sort} onChange={(e) => {
                         setSort(e.target.value);
                         setCurrentPage(0);
                     }}>

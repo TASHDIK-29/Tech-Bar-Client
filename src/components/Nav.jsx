@@ -55,7 +55,7 @@ const Navbar = () => {
                 >
                     <div className="flex flex-col md:flex-row md:mx-6">
                         <NavLink to='/' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0" href="#">Home</NavLink>
-                        <a className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0" href="#">Shop</a>
+                        <NavLink to='/products' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0" href="#">Products</NavLink>
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0" href="#">Contact</a>
                         <a className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0" href="#">About</a>
                     </div>
