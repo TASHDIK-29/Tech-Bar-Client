@@ -8,6 +8,8 @@ const ProductList = () => {
     const [category, setCategory] = useState(null);
     const [minPrice, setMinPrice] = useState(null);
     const [maxPrice, setMaxPrice] = useState(null);
+    const [sort, setSort] = useState('');
+
 
     const [currentPage, setCurrentPage] = useState(0);
     const [count, setCount] = useState(0);
@@ -23,7 +25,8 @@ const ProductList = () => {
                 category,
                 minPrice,
                 maxPrice,
-                currentPage
+                currentPage,
+                sort
             }
         });
         setProducts(response.data.product);
@@ -34,7 +37,7 @@ const ProductList = () => {
 
         fetchProducts();
 
-    }, [search, brand, category, minPrice, maxPrice, currentPage]);
+    }, [search, brand, category, minPrice, maxPrice, currentPage, sort]);
 
     console.log({ products, count });
 
@@ -43,7 +46,7 @@ const ProductList = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     return (
-        <div className={`relative ${products.length<4 && 'h-[80vh]'} pb-10`}>
+        <div className={`relative ${products.length < 4 && 'h-[80vh]'} pb-10`}>
             <div className='flex justify-between'>
                 <input
                     type="text"
@@ -79,17 +82,31 @@ const ProductList = () => {
                 <div>
                     <h4>Filter by Price</h4>
                     <input
+                        className='border-2 rounded-lg p-2'
                         type="number"
                         placeholder="Min Price"
                         value={minPrice}
                         onChange={(e) => setMinPrice(e.target.value)}
                     />
                     <input
+                        className='border-2 rounded-lg p-2'
                         type="number"
                         placeholder="Max Price"
                         value={maxPrice}
                         onChange={(e) => setMaxPrice(e.target.value)}
                     />
+                </div>
+
+                <div>
+                    <h4>Sort By</h4>
+                    <select value={sort} onChange={(e) => {setSort(e.target.value);
+                        setCurrentPage(0);
+                    }}>
+                        <option value="">Select Sort Order</option>
+                        <option value="low-to-high">Low to High</option>
+                        <option value="high-to-low">High to Low</option>
+                        <option value="newest-first">Newest</option>
+                    </select>
                 </div>
 
 
