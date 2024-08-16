@@ -13,6 +13,7 @@ import Register from './pages/login-registration/Register';
 import AuthProvider from './auth/AuthProvider';
 import { Toaster } from 'react-hot-toast';
 import ProductList from './pages/home/Products';
+import Bookmark from './pages/bookmark/Bookmark';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: <ProductList />
+      },
+      {
+        path: '/bookmarks',
+        element: <Bookmark />
       },
       {
         path: '/login',
