@@ -47,49 +47,57 @@ const ProductList = () => {
 
     return (
         <div className={`relative ${products.length < 4 && 'h-[80vh]'} pb-10`}>
-            <div className='flex justify-between'>
-                <input
-                    type="text"
-                    placeholder="Search products"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    className='border-2 rounded-lg p-2'
-                />
+            <div className='grid grid-cols-7 gap-2'>
+                <div className='col-span-2'>
+                <h4>Search By Name</h4>
+                    <input
+                        type="text"
+                        placeholder="Search products"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        className='border-2 bg-slate-300 p-2 w-full'
+                    />
+                </div>
 
                 <div>
                     <h4>Filter by Brand</h4>
-                    <select value={brand} onChange={(e) => setBrand(e.target.value)}>
+                    <select className='border-2 w-full p-2 bg-slate-300' value={brand} onChange={(e) => setBrand(e.target.value)}>
                         <option value="">Select Brand</option>
                         <option value="Apple">Apple</option>
                         <option value="Google">Google</option>
                         <option value="Samsung">Samsung</option>
+                        <option value="All">All</option>
                         {/* Add more brands as needed */}
                     </select>
                 </div>
 
                 <div>
                     <h4>Filter by Category</h4>
-                    <select value={category} onChange={(e) => setCategory(e.target.value)}>
+                    <select className='border-2 p-2 bg-slate-300 w-full' value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option value="">Select Category</option>
                         <option value="Computer">Computer</option>
                         <option value="Laptop">Laptop</option>
                         <option value="Tab">Tab</option>
                         <option value="Mobile">Mobile</option>
+                        <option value="All">All</option>
                         {/* Add more categories as needed */}
                     </select>
                 </div>
 
                 <div>
-                    <h4>Filter by Price</h4>
+                    <h4>Min Price</h4>
                     <input
-                        className='border-2 rounded-lg p-2'
+                        className='border-2 w-full p-2 bg-slate-300'
                         type="number"
                         placeholder="Min Price"
                         value={minPrice}
                         onChange={(e) => setMinPrice(e.target.value)}
                     />
+                </div>
+                <div>
+                    <h4>Max Price</h4>
                     <input
-                        className='border-2 rounded-lg p-2'
+                        className='border-2 w-full p-2 bg-slate-300'
                         type="number"
                         placeholder="Max Price"
                         value={maxPrice}
@@ -99,7 +107,8 @@ const ProductList = () => {
 
                 <div>
                     <h4>Sort By</h4>
-                    <select value={sort} onChange={(e) => {setSort(e.target.value);
+                    <select className='border-2 w-full p-2 bg-slate-300' value={sort} onChange={(e) => {
+                        setSort(e.target.value);
                         setCurrentPage(0);
                     }}>
                         <option value="">Select Sort Order</option>
