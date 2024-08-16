@@ -43,7 +43,7 @@ const ProductList = () => {
     const pages = [...Array(numberOfPages).keys()];
 
     return (
-        <div className=' min-h-[90vh]'>
+        <div className={`relative ${products.length<4 && 'h-[80vh]'} pb-10`}>
             <div className='flex justify-between'>
                 <input
                     type="text"
@@ -94,11 +94,11 @@ const ProductList = () => {
 
 
             </div>
-            <div className='mb-20'>
+            <div className=''>
                 <h4>Products : {products.length}</h4>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {products?.map(({ _id, Ratings, ProductName, ProductCreationDate, Price, Image, Description, Category, Brand }) => (
-                        <div key={_id} className="flex max-w-md overflow-hidden bg-white rounded-lg shadow-lg ">
+                        <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
                             <div className="w-2/5 bg-cover">
                                 <img className='w-full h-full' src="https://img.freepik.com/premium-photo/white-iphone-with-back-turned-camera_1149286-223.jpg?w=740" alt="" />
                             </div>
@@ -142,7 +142,7 @@ const ProductList = () => {
                     ))}
                 </div>
             </div>
-            <div className="space-x-2 my-10 w-full flex justify-center">
+            <div className="space-x-2 w-full flex justify-center absolute -bottom-16">
                 {
                     pages.map(i => <button className={currentPage === i ? 'bg-blue-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-orange-400 font-medium border-orange-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
                 }
