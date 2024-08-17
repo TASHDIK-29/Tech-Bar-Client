@@ -16,11 +16,13 @@ const ProductList = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [count, setCount] = useState(0);
 
+    const [isLoading, setIsLoading] = useState(false);
+
 
 
 
     const fetchProducts = async () => {
-        const response = await axios.get('http://localhost:5000/products', {
+        const response = await axios.get('https://scic-tech-bar-server.vercel.app/products', {
             params: {
                 search,
                 brand,
@@ -33,12 +35,16 @@ const ProductList = () => {
         });
         setProducts(response.data.product);
         setCount(response.data.count);
+
+        setIsLoading(false)
     };
 
     useEffect(() => {
-        window.scroll(0, 0);
-        
+
+        setIsLoading(true)
+
         fetchProducts();
+        window.scroll(0, 0);
 
     }, [search, brand, category, minPrice, maxPrice, currentPage, sort]);
 
@@ -141,50 +147,83 @@ const ProductList = () => {
             </div>
             <div className='mt-12'>
                 <div className='grid grid-cols-1 md:grid-cols-2  gap-6'>
-                    {products?.map((product, idx) => (
-                        // <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
-                        //     <div className="w-2/5 bg-cover">
-                        //         <img className='w-full h-full' src="https://img.freepik.com/premium-photo/white-iphone-with-back-turned-camera_1149286-223.jpg?w=740" alt="" />
-                        //     </div>
+                    {isLoading ?
+                        <section className="bg-white col-span-2">
+                            <div className="container px-6 py-10 mx-auto animate-pulse">
+                                <h1 className="w-48 h-2 mx-auto bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
 
-                        //     <div className="w-2/3 p-4 md:p-4">
-                        //         <h1 className="text-xl font-bold text-gray-800 ">{ProductName}</h1>
+                                <p className="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                                <p className="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg sm:w-80 dark:bg-gray-700"></p>
 
-                        //         <p className="mt-2 text-sm text-gray-600 ">{Description}</p>
+                                <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                                    <div className="w-full ">
+                                        <div className="w-full h-64 bg-gray-300 rounded-lg md:h-72 dark:bg-gray-600"></div>
 
-                        //         <div className="flex mt-2 item-center">
-                        //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
-                        //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        //             </svg>
+                                        <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                                        <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                                    </div>
 
-                        //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
-                        //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        //             </svg>
+                                    <div className="w-full ">
+                                        <div className="w-full h-64 bg-gray-300 rounded-lg md:h-72 dark:bg-gray-600"></div>
 
-                        //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
-                        //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        //             </svg>
+                                        <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                                        <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                                    </div>
 
-                        //             <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
-                        //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        //             </svg>
+                                    <div className="w-full ">
+                                        <div className="w-full h-64 bg-gray-300 rounded-lg md:h-72 dark:bg-gray-600"></div>
 
-                        //             <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
-                        //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        //             </svg>
-                        //         </div>
-                        //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Brand : <span className='text-lg font-bold'>{Brand}</span></h3>
-                        //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Category : <span className='text-lg font-bold'>{Category}</span></h3>
-                        //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Launched : <span className='text-lg font-bold'>{ProductCreationDate}</span></h3>
+                                        <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                                        <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
-                        //         <div className="flex justify-between mt-3 item-center">
-                        //             <h1 className="text-lg font-bold text-gray-700  md:text-xl">${Price}</h1>
-                        //             {/* <button className="px-2 py-1 text-xs font-bold  uppercase transition-colors duration-300 transform  rounded bg-gray-700 hover:bg-gray-700  focus:outline-none focus:bg-gray-700">Add to Cart</button> */}
-                        //         </div>
-                        //     </div>
-                        // </div>
-                        <ProductCard key={idx} product={product} />
-                    ))}
+                        : products?.map((product, idx) => (
+                            // <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
+                            //     <div className="w-2/5 bg-cover">
+                            //         <img className='w-full h-full' src="https://img.freepik.com/premium-photo/white-iphone-with-back-turned-camera_1149286-223.jpg?w=740" alt="" />
+                            //     </div>
+
+                            //     <div className="w-2/3 p-4 md:p-4">
+                            //         <h1 className="text-xl font-bold text-gray-800 ">{ProductName}</h1>
+
+                            //         <p className="mt-2 text-sm text-gray-600 ">{Description}</p>
+
+                            //         <div className="flex mt-2 item-center">
+                            //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
+                            //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            //             </svg>
+
+                            //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
+                            //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            //             </svg>
+
+                            //             <svg className="w-5 h-5 text-gray-700 fill-current " viewBox="0 0 24 24">
+                            //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            //             </svg>
+
+                            //             <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                            //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            //             </svg>
+
+                            //             <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
+                            //                 <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            //             </svg>
+                            //         </div>
+                            //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Brand : <span className='text-lg font-bold'>{Brand}</span></h3>
+                            //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Category : <span className='text-lg font-bold'>{Category}</span></h3>
+                            //         <h3 className='text-base font-semibold text-gray-700 mt-1'>Launched : <span className='text-lg font-bold'>{ProductCreationDate}</span></h3>
+
+                            //         <div className="flex justify-between mt-3 item-center">
+                            //             <h1 className="text-lg font-bold text-gray-700  md:text-xl">${Price}</h1>
+                            //             {/* <button className="px-2 py-1 text-xs font-bold  uppercase transition-colors duration-300 transform  rounded bg-gray-700 hover:bg-gray-700  focus:outline-none focus:bg-gray-700">Add to Cart</button> */}
+                            //         </div>
+                            //     </div>
+                            // </div>
+                            <ProductCard key={idx} product={product} />
+                        ))}
                 </div>
             </div>
             <div className="absolute -bottom-16 w-full space-y-1">

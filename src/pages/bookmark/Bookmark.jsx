@@ -10,7 +10,7 @@ const Bookmark = () => {
     const [bookmarks, setBookmarks] = useState([])
 
     const fetchBookmarks = async () => {
-        const res = await axios.get('http://localhost:5000/bookmark', {
+        const res = await axios.get('https://scic-tech-bar-server.vercel.app/bookmark', {
             params: {
                 email: user?.email
             }
@@ -21,7 +21,7 @@ const Bookmark = () => {
 
     useEffect(() => {
         window.scroll(0, 0);
-        
+
         fetchBookmarks()
     }, [])
 

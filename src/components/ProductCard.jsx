@@ -5,6 +5,7 @@ import axios from "axios";
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import toast from "react-hot-toast";
 
 const ProductCard = ({ product }) => {
 
@@ -17,8 +18,14 @@ const ProductCard = ({ product }) => {
 
         const bookMark = { productId: _id, Ratings, ProductName, ProductCreationDate, Price, Image, Description, Category, Brand, email: user?.email };
 
-        const res = await axios.post('http://localhost:5000/bookmark', bookMark);
+        const res = await axios.post('https://scic-tech-bar-server.vercel.app/bookmark', bookMark);
         console.log(res.data);
+
+        if(res.data.insertedId){
+            toast.success(`${ProductName} Bookmarked`)
+        }else{
+            toast.error(`${ProductName} Already Bookmarked`)
+        }
     }
 
     return (
