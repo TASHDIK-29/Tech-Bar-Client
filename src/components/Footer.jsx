@@ -53,7 +53,7 @@ const Footer = () => {
 
                 <hr className="my-6  md:my-8 border-gray-700" />
 
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <h1>
                         <span className="text-4xl font-bold bg-300% bg-gradient-to-r from-secondary via-blue-500 to-primary text-transparent bg-clip-text animate-gradient">TechBar</span>
                     </h1>

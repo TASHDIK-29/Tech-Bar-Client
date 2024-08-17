@@ -22,12 +22,12 @@ const ProductCard = ({ product }) => {
     }
 
     return (
-        <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
-            <div className="w-2/5 bg-cover">
+        <div key={_id} className="flex flex-col md:flex-row overflow-hidden bg-white rounded-lg shadow-lg ">
+            <div className="w-full md:w-2/5 bg-cover">
                 <img className='w-full h-full' src={Image} alt="" />
             </div>
 
-            <div className="w-2/3 p-4 md:p-4">
+            <div className="w-full md:w-2/3 p-4 md:p-4">
                 <h1 className="text-xl font-bold text-gray-800 ">{ProductName}</h1>
 
                 <p className="mt-2 text-sm text-gray-600 ">{Description}</p>

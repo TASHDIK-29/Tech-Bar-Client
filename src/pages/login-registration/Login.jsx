@@ -3,6 +3,7 @@ import { AuthContext } from "../../auth/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
+import SocialLogin from "../../shared/SocialLogin";
 
 const Login = () => {
 
@@ -14,7 +15,10 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
+
     const page = location?.state || '/';
+
+
     const handelLogin = e => {
         e.preventDefault();
 
@@ -39,21 +43,12 @@ const Login = () => {
             })
     }
 
-    const handelGoogle = () => {
-        googleLogin()
-            .then(result => {
-                navigate(page);
-                toast.success('Login Successful')
-            })
-            .catch(err => {
-                console.log(err);
-            })
-    }
+    
 
 
     return (
         <div className="min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-sm border border-gray-600 overflow-hidden bg-white rounded-lg shadow-md ">
+            <div className="w-full max-w-sm border-2 border-gray-600 overflow-hidden bg-white rounded-lg shadow-md ">
                 <div className="px-6 py-4">
                     <div className="flex justify-center mx-auto">
                         {/* <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt=""> */}
@@ -73,7 +68,8 @@ const Login = () => {
                         </div>
 
                         <div className="flex items-center justify-between mt-4">
-                            <button onClick={handelGoogle} className="flex items-center gap-2 border p-2 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button>
+                            {/* <button onClick={handelGoogle} className="flex items-center gap-2 border px-2 py-1 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button> */}
+                            <SocialLogin page={page} />
 
                             <button type="submit" className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Sign In

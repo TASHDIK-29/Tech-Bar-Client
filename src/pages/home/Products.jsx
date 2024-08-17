@@ -36,7 +36,8 @@ const ProductList = () => {
     };
 
     useEffect(() => {
-
+        window.scroll(0, 0);
+        
         fetchProducts();
 
     }, [search, brand, category, minPrice, maxPrice, currentPage, sort]);
@@ -47,25 +48,25 @@ const ProductList = () => {
     const numberOfPages = Math.ceil(count / 4);
     const pages = [...Array(numberOfPages).keys()];
 
-    const handlePrev = () =>{
-        if(currentPage > 0){
+    const handlePrev = () => {
+        if (currentPage > 0) {
             setCurrentPage(currentPage - 1)
-        }else{
+        } else {
             console.log('No more data');
         }
     }
 
-    const handleNext = () =>{
-        if(currentPage < pages.length-1){
+    const handleNext = () => {
+        if (currentPage < pages.length - 1) {
             setCurrentPage(currentPage + 1)
-        }else{
+        } else {
             console.log('No more data');
         }
     }
 
     return (
         <div className={`relative ${products.length < 3 && 'h-[80vh]'} pb-10`}>
-            <div className='grid grid-cols-7 gap-2 mt-8'>
+            <div className='grid grid-cols-2 md:grid-cols-7 gap-2 mt-8'>
                 <div className='col-span-2'>
                     <h4 className='font-semibold'>Search By Name</h4>
                     <input
@@ -186,12 +187,17 @@ const ProductList = () => {
                     ))}
                 </div>
             </div>
-            <div className="space-x-2 w-full flex justify-center absolute -bottom-16">
-                <button onClick={handlePrev} className='border-2 border-slate-400 p-1 rounded-l-lg text-slate-600 font-semibold flex items-center gap-2'><FaLessThan /> Prev</button>
-                {
-                    pages.map(i => <button className={currentPage === i ? 'bg-slate-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-slate-400 font-medium border-slate-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
-                }
-                <button onClick={handleNext} className='border-2 border-slate-400 p-1 rounded-r-lg text-slate-600 font-semibold flex items-center gap-2'>Next <FaGreaterThan /></button>
+            <div className="absolute -bottom-16 w-full space-y-1">
+                <div className='space-x-2 w-full flex justify-center items-center'>
+                    {
+                        pages.map(i => <button className={currentPage === i ? 'bg-slate-500 text-white font-semibold  px-1 md:px-3 py-1 rounded-full  ' : 'px-1 md:px-3 py-1 rounded-full border text-slate-400 font-medium border-slate-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
+                    }
+                </div>
+                <div className='flex justify-center gap-2'>
+                    <button onClick={handlePrev} className='border-2 border-slate-400 p-1 rounded-l-lg text-slate-600 font-semibold flex items-center gap-2'><FaLessThan /> Prev</button>
+
+                    <button onClick={handleNext} className='border-2 border-slate-400 p-1 rounded-r-lg text-slate-600 font-semibold flex items-center gap-2'>Next <FaGreaterThan /></button>
+                </div>
             </div>
         </div>
     );

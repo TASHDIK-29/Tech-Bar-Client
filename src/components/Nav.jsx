@@ -23,9 +23,9 @@ const Navbar = () => {
         <nav className="relative bg-white shadow ">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
-                    <a href="#">
-                        <span className='text-3xl font-bold text-primary'>Tech</span><span className='text-3xl font-bold text-secondary'>Bar</span>
-                    </a>
+                    <h1>
+                        <span className="text-3xl font-bold bg-300% bg-gradient-to-r from-secondary via-blue-500 to-primary text-transparent bg-clip-text animate-gradient">TechBar</span>
+                    </h1>
 
                     {/* Mobile menu button */}
                     <div className="flex lg:hidden">
@@ -54,9 +54,9 @@ const Navbar = () => {
                         }`}
                 >
                     <div className="flex flex-col md:flex-row md:mx-6">
-                        <NavLink to='/' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Home</NavLink>
-                        <NavLink to='/products' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Products</NavLink>
-                        <NavLink to='/bookmarks' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Bookmarks</NavLink>
+                        <NavLink onClick={() => setIsOpen(!isOpen)} to='/' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Home</NavLink>
+                        <NavLink onClick={() => setIsOpen(!isOpen)} to='/products' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Products</NavLink>
+                        <NavLink onClick={() => setIsOpen(!isOpen)} to='/bookmarks' className="my-2 text-gray-700 transition-colors duration-300 transform  hover:text-blue-500  md:mx-4 md:my-0 font-semibold" href="#">Bookmarks</NavLink>
 
                     </div>
 
