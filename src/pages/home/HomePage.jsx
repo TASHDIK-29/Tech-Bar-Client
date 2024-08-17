@@ -5,7 +5,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 
 const HomePage = () => {
-    
+
     const { user } = useContext(AuthContext);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const HomePage = () => {
                         <span className="text-3xl md:text-5xl font-bold bg-300% bg-gradient-to-r from-secondary via-blue-500 to-primary text-transparent bg-clip-text animate-gradient">TechBar</span>
                     </h1>
                     <h3 className="text-lg font-semibold text-slate-500">Choose Your Best Gadget</h3>
-                    <p className="font-medium text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis assumenda est vitae atque impedit voluptatum dolorem ipsam ipsum neque.</p>
+                    <p className="font-medium text-slate-400">Welcome to GadgetHub! Explore the latest tech gadgets with powerful search and filter tools to find your perfect match.</p>
                 </div>
             </div>
             <div className="flex justify-between items-center">
