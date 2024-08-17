@@ -71,8 +71,8 @@ const Register = () => {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-sm border-2 border-gray-600 overflow-hidden bg-white rounded-lg shadow-md ">
+        <div className="md:min-h-screen flex items-center justify-center">
+            <div className="w-full max-w-sm border-2 border-gray-600 overflow-hidden bg-white rounded-lg shadow-md mt-8">
                 <div className="px-6 py-4">
                     <div className="flex justify-center mx-auto">
                         {/* <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt=""> */}
