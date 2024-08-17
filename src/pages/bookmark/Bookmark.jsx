@@ -27,7 +27,7 @@ const Bookmark = () => {
 
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2  gap-6 py-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2  gap-6 py-4 mt-12'>
             {bookmarks?.map((product, idx) => (
                 <ProductCard key={idx} product={product} />
             ))}

@@ -46,11 +46,27 @@ const ProductList = () => {
     const numberOfPages = Math.ceil(count / 4);
     const pages = [...Array(numberOfPages).keys()];
 
+    const handlePrev = () =>{
+        if(currentPage > 0){
+            setCurrentPage(currentPage - 1)
+        }else{
+            console.log('No more data');
+        }
+    }
+
+    const handleNext = () =>{
+        if(currentPage < pages.length-1){
+            setCurrentPage(currentPage + 1)
+        }else{
+            console.log('No more data');
+        }
+    }
+
     return (
         <div className={`relative ${products.length < 3 && 'h-[80vh]'} pb-10`}>
-            <div className='grid grid-cols-7 gap-2'>
+            <div className='grid grid-cols-7 gap-2 mt-8'>
                 <div className='col-span-2'>
-                    <h4>Search By Name</h4>
+                    <h4 className='font-semibold'>Search By Name</h4>
                     <input
                         type="text"
                         placeholder="Search products"
@@ -61,8 +77,8 @@ const ProductList = () => {
                 </div>
 
                 <div>
-                    <h4>Filter by Brand</h4>
-                    <select className='border-2 w-full p-2 bg-slate-300 shadow-md' value={brand} onChange={(e) => {setBrand(e.target.value); setCurrentPage(0);}}>
+                    <h4 className='font-semibold'>Filter by Brand</h4>
+                    <select className='border-2 w-full p-2 bg-slate-300 shadow-md' value={brand} onChange={(e) => { setBrand(e.target.value); setCurrentPage(0); }}>
                         <option value="">Select Brand</option>
                         <option value="Apple">Apple</option>
                         <option value="Google">Google</option>
@@ -73,8 +89,8 @@ const ProductList = () => {
                 </div>
 
                 <div>
-                    <h4>Filter by Category</h4>
-                    <select className='border-2 p-2 bg-slate-300 w-full shadow-md' value={category} onChange={(e) => {setCategory(e.target.value); setCurrentPage(0);}}>
+                    <h4 className='font-semibold'>Filter by Category</h4>
+                    <select className='border-2 p-2 bg-slate-300 w-full shadow-md' value={category} onChange={(e) => { setCategory(e.target.value); setCurrentPage(0); }}>
                         <option value="">Select Category</option>
                         <option value="Computer">Computer</option>
                         <option value="Laptop">Laptop</option>
@@ -86,28 +102,28 @@ const ProductList = () => {
                 </div>
 
                 <div>
-                    <h4>Min Price</h4>
+                    <h4 className='font-semibold'>Min Price</h4>
                     <input
                         className='border-2 w-full p-2 bg-slate-300 shadow-md'
                         type="number"
                         placeholder="Min Price"
                         value={minPrice}
-                        onChange={(e) => {setMinPrice(e.target.value); setCurrentPage(0);}}
+                        onChange={(e) => { setMinPrice(e.target.value); setCurrentPage(0); }}
                     />
                 </div>
                 <div>
-                    <h4>Max Price</h4>
+                    <h4 className='font-semibold'>Max Price</h4>
                     <input
                         className='border-2 w-full p-2 bg-slate-300 shadow-md'
                         type="number"
                         placeholder="Max Price"
                         value={maxPrice}
-                        onChange={(e) => {setMaxPrice(e.target.value); setCurrentPage(0);}}
+                        onChange={(e) => { setMaxPrice(e.target.value); setCurrentPage(0); }}
                     />
                 </div>
 
                 <div>
-                    <h4>Sort By</h4>
+                    <h4 className='font-semibold'>Sort By</h4>
                     <select className='border-2 w-full p-2 bg-slate-300 shadow-md' value={sort} onChange={(e) => {
                         setSort(e.target.value);
                         setCurrentPage(0);
@@ -121,8 +137,7 @@ const ProductList = () => {
 
 
             </div>
-            <div className=''>
-                <h4>Products : {products.length}</h4>
+            <div className='mt-12'>
                 <div className='grid grid-cols-1 md:grid-cols-2  gap-6'>
                     {products?.map((product, idx) => (
                         // <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
@@ -171,9 +186,11 @@ const ProductList = () => {
                 </div>
             </div>
             <div className="space-x-2 w-full flex justify-center absolute -bottom-16">
+                <button onClick={handlePrev}>Prev</button>
                 {
                     pages.map(i => <button className={currentPage === i ? 'bg-blue-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-orange-400 font-medium border-orange-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
                 }
+                <button onClick={handleNext}>Next</button>
             </div>
         </div>
     );

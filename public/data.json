@@ -1,0 +1,393 @@
+[
+    {
+      "ProductName": "Apple MacBook Pro 16",
+      "Image": "https://img.freepik.com/free-photo/laptop-with-colorful-abstract-screen-grey-background-3d-rendering_1142-41955.jpg?t=st=1723873868~exp=1723877468~hmac=99ed11e7b5f95156a94f62a2a9711313d261c0fc78ea6d291cd6421b0bbef3d7&w=740",
+      "Description": "The powerful MacBook Pro with M1 chip and 16-inch Retina display.",
+      "Price": 2399.99,
+      "Category": "Laptop",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2023-08-01"
+    },
+    {
+      "ProductName": "Samsung Galaxy S23 Ultra",
+      "Image": "https://img.freepik.com/premium-vector/samsung-galaxy-s23-ultra-official-presentation-new-flagship-new-generation-smartphone-phone-with-builtin-stylus-black-color-original-wallpaper-screen-editorial_661108-12677.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "The latest Galaxy smartphone with a stunning display and pro-grade camera.",
+      "Price": 1199.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2023-07-21"
+    },
+    {
+      "ProductName": "Google Pixel 7 Pro",
+      "Image": "https://img.freepik.com/free-psd/google-pixel-7-pro-mockup_1332-60682.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "Google’s flagship smartphone with the best of Android and an exceptional camera.",
+      "Price": 899.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2023-06-15"
+    },
+    {
+      "ProductName": "Apple iPad Pro 12.9",
+      "Image": "https://img.freepik.com/premium-photo/create-high-quality-clean-sleek-photo-promotional-poster-mobile-pad_1096167-111795.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A versatile iPad with an immersive display and powerful M1 chip.",
+      "Price": 1099.99,
+      "Category": "Tab",
+      "Brand": "Apple",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2023-05-05"
+    },
+    {
+      "ProductName": "Samsung Galaxy Book Pro",
+      "Image": "https://img.freepik.com/free-photo/close-up-pen-with-phone_23-2150835654.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A lightweight and powerful laptop with an AMOLED display.",
+      "Price": 1350.00,
+      "Category": "Laptop",
+      "Brand": "Samsung",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2023-04-10"
+    },
+    {
+      "ProductName": "Google Pixelbook Go",
+      "Image": "https://img.freepik.com/premium-vector/realistic-tablet-pc-vector-illustration-trendy-thin-frame-design-with-front-back-side-view_174496-486.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A sleek Chromebook designed for high performance and portability.",
+      "Price": 849.99,
+      "Category": "Laptop",
+      "Brand": "Google",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2023-03-20"
+    },
+    {
+      "ProductName": "Apple iPhone 14 Pro",
+      "Image": "https://img.freepik.com/premium-photo/phone-that-has-word-apple-it_1281599-6028.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "The latest iPhone with A16 Bionic chip and Pro camera system.",
+      "Price": 1099.00,
+      "Category": "Mobile",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2023-02-14"
+    },
+    {
+      "ProductName": "Samsung Galaxy Tab S8+",
+      "Image": "https://img.freepik.com/premium-photo/create-high-quality-clean-sleek-photo-promotional-poster-mobile-pad_1269188-19867.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A premium tablet with a large AMOLED display and S Pen.",
+      "Price": 899.99,
+      "Category": "Tab",
+      "Brand": "Samsung",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2023-01-25"
+    },
+    {
+      "ProductName": "Google Nest Hub Max",
+      "Image": "https://img.freepik.com/free-photo/devices-arrangement-desk_23-2148994217.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smart display with Google Assistant and built-in security features.",
+      "Price": 229.99,
+      "Category": "Tab",
+      "Brand": "Google",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2022-12-15"
+    },
+    {
+      "ProductName": "Apple Mac Mini M2",
+      "Image": "https://img.freepik.com/free-photo/computer-monitor-mouse-gray-background-3d-render-illustration_1142-59607.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A compact desktop with the powerful M2 chip for professionals.",
+      "Price": 699.99,
+      "Category": "Computer",
+      "Brand": "Apple",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2022-11-10"
+    },
+    {
+      "ProductName": "Samsung Galaxy A53",
+      "Image": "https://img.freepik.com/free-vector/smartphone-with-purple-display_23-2147698073.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "An affordable Galaxy smartphone with impressive features.",
+      "Price": 449.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.4,
+      "ProductCreationDate": "2022-10-20"
+    },
+    {
+      "ProductName": "Google Pixel Slate",
+      "Image": "https://img.freepik.com/free-vector/abstract-shape-mobile-wallpapers_23-2147661935.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A powerful tablet that transforms into a laptop with a detachable keyboard.",
+      "Price": 999.00,
+      "Category": "Tab",
+      "Brand": "Google",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2022-09-25"
+    },
+    {
+      "ProductName": "Apple iMac 24-inch",
+      "Image": "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706519.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A sleek all-in-one desktop with Retina display and M1 chip.",
+      "Price": 1799.00,
+      "Category": "Computer",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2022-08-30"
+    },
+    {
+      "ProductName": "Samsung Galaxy Z Fold 4",
+      "Image": "https://img.freepik.com/premium-photo/samsung-phone-with-pen-it_1246638-1453.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A foldable smartphone with cutting-edge design and multitasking capabilities.",
+      "Price": 1799.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2022-07-18"
+    },
+    {
+      "ProductName": "Google Pixel C",
+      "Image": "https://img.freepik.com/free-psd/mobile-phone-mock-up-design_1297-1.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A high-performance Android tablet with a detachable keyboard.",
+      "Price": 499.00,
+      "Category": "Tab",
+      "Brand": "Google",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2022-06-25"
+    },
+    {
+      "ProductName": "Apple Mac Pro",
+      "Image": "https://img.freepik.com/free-photo/view-computer-monitor-display_23-2150757465.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A desktop powerhouse for professionals demanding top performance.",
+      "Price": 5999.99,
+      "Category": "Computer",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2022-05-15"
+    },
+    {
+      "ProductName": "Samsung Galaxy 5",
+      "Image": "https://img.freepik.com/free-vector/realistic-smartphone-different-perspectives_23-2148348833.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smartwatch with advanced health tracking and long battery life.",
+      "Price": 349.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2022-04-25"
+    },
+    {
+      "ProductName": "Google Pixelbook 2",
+      "Image": "https://img.freepik.com/free-photo/halfclosed-laptop-wooden-table-screen-glows-with-colors_169016-33669.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A high-end Chromebook with sleek design and powerful performance.",
+      "Price": 1199.00,
+      "Category": "Laptop",
+      "Brand": "Google",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2022-03-14"
+    },
+    {
+      "ProductName": "Apple iPad Mini 6",
+      "Image": "https://img.freepik.com/premium-vector/electronics-tablet-computers_733843-63.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A compact tablet with a stunning Liquid Retina display and A15 Bionic chip.",
+      "Price": 499.99,
+      "Category": "Tab",
+      "Brand": "Apple",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2022-02-22"
+    },
+    {
+      "ProductName": "Samsung Galaxy Tab S7+",
+      "Image": "https://img.freepik.com/free-psd/tablet-skin-mock-up-isolated_1310-1149.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A high-end tablet with 120Hz display and S Pen included.",
+      "Price": 849.99,
+      "Category": "Tab",
+      "Brand": "Samsung",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2022-01-30"
+    },
+    {
+      "ProductName": "Google Home Max",
+      "Image": "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706455.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smart speaker with high-fidelity sound and Google Assistant built-in.",
+      "Price": 299.00,
+      "Category": "Computer",
+      "Brand": "Google",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2022-01-10"
+    },
+    {
+      "ProductName": "Apple Watch Series 7",
+      "Image": "https://img.freepik.com/free-vector/smartphone-with-gradient-wallpaper_23-2147843161.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smartwatch with larger display and advanced health features.",
+      "Price": 429.00,
+      "Category": "Mobile",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2021-12-15"
+    },
+    {
+      "ProductName": "Samsung Galaxy Buds Pro",
+      "Image": "https://img.freepik.com/free-vector/silver-smartphone_23-2147694815.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "Wireless earbuds with active noise cancellation and immersive sound.",
+      "Price": 199.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2021-11-28"
+    },
+    {
+      "ProductName": "Google Pixel Buds A-Series",
+      "Image": "https://img.freepik.com/free-vector/modern-mobile-wallpapers-triangles-colorful-hexagons_23-2147660614.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "Affordable wireless earbuds with high-quality sound and Google Assistant.",
+      "Price": 99.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2021-10-20"
+    },
+    {
+      "ProductName": "Apple MacBook Air M1",
+      "Image": "https://img.freepik.com/free-photo/top-view-laptop-smartphone-arrangement_23-2149476772.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A lightweight laptop with the powerful M1 chip and all-day battery life.",
+      "Price": 999.99,
+      "Category": "Laptop",
+      "Brand": "Apple",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2021-09-18"
+    },
+    {
+      "ProductName": "Samsung Galaxy Tab A7",
+      "Image": "https://img.freepik.com/free-psd/tablet-mock-up-design_1310-59.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "An affordable tablet with a 10.4-inch display and Dolby Atmos sound.",
+      "Price": 229.99,
+      "Category": "Tab",
+      "Brand": "Samsung",
+      "Ratings": 4.4,
+      "ProductCreationDate": "2021-08-24"
+    },
+    {
+      "ProductName": "Google Pixel 5a",
+      "Image": "https://img.freepik.com/free-vector/realistic-smartphone-different-perspectives_23-2148348833.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A mid-range smartphone with excellent battery life and Google features.",
+      "Price": 449.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2021-07-15"
+    },
+    {
+      "ProductName": "Apple iMac Pro",
+      "Image": "https://img.freepik.com/premium-psd/apple-monitor-with-an-image-showing_917048-1685.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A powerful all-in-one desktop with Retina display and advanced features.",
+      "Price": 4999.99,
+      "Category": "Computer",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2021-06-10"
+    },
+    {
+      "ProductName": "Samsung Galaxy S21 FE",
+      "Image": "https://img.freepik.com/free-vector/triple-camera-black-smartphone-concept-mockup_1017-19784.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A fan edition Galaxy smartphone with flagship features at a lower price.",
+      "Price": 699.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2021-05-22"
+    },
+    {
+      "ProductName": "Google Nest Audio",
+      "Image": "https://img.freepik.com/free-photo/3d-rendering-computer-desk_23-2151004363.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smart speaker with rich sound and Google Assistant built-in.",
+      "Price": 99.00,
+      "Category": "Computer",
+      "Brand": "Google",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2021-04-15"
+    },
+    {
+      "ProductName": "Apple iPad Air 4",
+      "Image": "https://img.freepik.com/free-photo/electronic-device-surrounded-by-nature_52683-107556.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A powerful and versatile tablet with a 10.9-inch Liquid Retina display.",
+      "Price": 599.99,
+      "Category": "Tab",
+      "Brand": "Apple",
+      "Ratings": 4.8,
+      "ProductCreationDate": "2021-03-20"
+    },
+    {
+      "ProductName": "Samsung Galaxy Book Flex2",
+      "Image": "https://img.freepik.com/free-photo/laptop-computer-with-colorful-screen-white-background-3d-render_1142-54662.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A versatile 2-in-1 laptop with a QLED display and S Pen.",
+      "Price": 1399.99,
+      "Category": "Laptop",
+      "Brand": "Samsung",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2021-02-14"
+    },
+    {
+      "ProductName": "Google Pixel 4 XL",
+      "Image": "https://img.freepik.com/free-vector/side-view-mobile-phone_23-2147698415.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A premium smartphone with Google's best camera and smooth display.",
+      "Price": 799.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2021-01-05"
+    },
+    {
+      "ProductName": "Apple MacBook Pro 13",
+      "Image": "https://img.freepik.com/premium-photo/macbook-bro-mockup_113255-171219.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A compact laptop with M1 chip and impressive performance.",
+      "Price": 1299.99,
+      "Category": "Laptop",
+      "Brand": "Apple",
+      "Ratings": 4.9,
+      "ProductCreationDate": "2020-12-20"
+    },
+    {
+      "ProductName": "Samsung Galaxy Tab S6 Lite",
+      "Image": "https://img.freepik.com/free-photo/tablet-minimal-display-wooden-surface_23-2149554968.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A mid-range tablet with S Pen included and an immersive display.",
+      "Price": 349.99,
+      "Category": "Tab",
+      "Brand": "Samsung",
+      "Ratings": 4.5,
+      "ProductCreationDate": "2020-11-30"
+    },
+    {
+      "ProductName": "Google Pixel 3a",
+      "Image": "https://img.freepik.com/premium-vector/smartphone-mockup-easy-place-image-into-screen_66219-115.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A budget-friendly smartphone with excellent camera and Google features.",
+      "Price": 399.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.4,
+      "ProductCreationDate": "2020-10-10"
+    },
+    {
+      "ProductName": "Apple iPhone SE 2020",
+      "Image": "https://img.freepik.com/free-vector/modern-smartphone-design_23-2147704626.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A budget iPhone with A13 Bionic chip and Touch ID.",
+      "Price": 399.99,
+      "Category": "Mobile",
+      "Brand": "Apple",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2020-09-15"
+    },
+    {
+      "ProductName": "Samsung Galaxy F3",
+      "Image": "https://img.freepik.com/premium-photo/black-samsung-phone-with-time-12-00_1252102-12486.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A smartwatch with advanced health tracking and rotating bezel.",
+      "Price": 399.99,
+      "Category": "Mobile",
+      "Brand": "Samsung",
+      "Ratings": 4.6,
+      "ProductCreationDate": "2020-08-20"
+    },
+    {
+      "ProductName": "Google Pixel 4a",
+      "Image": "https://img.freepik.com/free-vector/shiny-smartphone_23-2147696350.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "A compact smartphone with excellent camera and pure Android experience.",
+      "Price": 349.00,
+      "Category": "Mobile",
+      "Brand": "Google",
+      "Ratings": 4.7,
+      "ProductCreationDate": "2020-07-18"
+    }
+  ]
+  

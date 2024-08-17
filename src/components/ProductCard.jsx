@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
     return (
         <div key={_id} className="flex overflow-hidden bg-white rounded-lg shadow-lg ">
             <div className="w-2/5 bg-cover">
-                <img className='w-full h-full' src="https://img.freepik.com/premium-photo/white-iphone-with-back-turned-camera_1149286-223.jpg?w=740" alt="" />
+                <img className='w-full h-full' src={Image} alt="" />
             </div>
 
             <div className="w-2/3 p-4 md:p-4">

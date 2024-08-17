@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
@@ -72,7 +73,7 @@ const Login = () => {
                         </div>
 
                         <div className="flex items-center justify-between mt-4">
-                            <button onClick={handelGoogle}>Google</button>
+                            <button onClick={handelGoogle} className="flex items-center gap-2 border p-2 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button>
 
                             <button type="submit" className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Sign In
