@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard';
+import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -186,11 +187,11 @@ const ProductList = () => {
                 </div>
             </div>
             <div className="space-x-2 w-full flex justify-center absolute -bottom-16">
-                <button onClick={handlePrev}>Prev</button>
+                <button onClick={handlePrev} className='border-2 border-slate-400 p-1 rounded-l-lg text-slate-600 font-semibold flex items-center gap-2'><FaLessThan /> Prev</button>
                 {
-                    pages.map(i => <button className={currentPage === i ? 'bg-blue-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-orange-400 font-medium border-orange-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
+                    pages.map(i => <button className={currentPage === i ? 'bg-slate-500 text-white font-semibold px-3 py-1 rounded-full  ' : 'px-3 py-1 rounded-full border text-slate-400 font-medium border-slate-400'} onClick={() => setCurrentPage(i)} key={i}>{i}</button>)
                 }
-                <button onClick={handleNext}>Next</button>
+                <button onClick={handleNext} className='border-2 border-slate-400 p-1 rounded-r-lg text-slate-600 font-semibold flex items-center gap-2'>Next <FaGreaterThan /></button>
             </div>
         </div>
     );
