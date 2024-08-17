@@ -23,7 +23,7 @@ const SocialLogin = ({page}) => {
 
 
     return (
-        <button onClick={handelGoogle} className="flex items-center gap-2 border px-2 py-1 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button>
+        <button onClick={handelGoogle} className="flex items-center gap-2 border px-6 py-1 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button>
     );
 };
 

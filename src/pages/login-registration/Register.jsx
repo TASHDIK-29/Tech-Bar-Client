@@ -54,7 +54,7 @@ const Register = () => {
                 toast.success('Registration Successful');
 
                 updateProfile(auth.currentUser, {
-                    displayName: name, 
+                    displayName: name,
                     // photoURL: photo
                 })
 
@@ -96,13 +96,17 @@ const Register = () => {
                         </div>
 
                         <div className="flex items-center justify-between mt-4">
-                            <SocialLogin page={"/"} />
 
-                            <button type="submit" className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+
+                            <button type="submit" className="w-full px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Sign Up
                             </button>
                         </div>
                     </form>
+                </div>
+
+                <div className="flex justify-center">
+                    <SocialLogin page={"/"} />
                 </div>
 
                 <div className="flex items-center justify-center py-4 text-center bg-gray-50 ">

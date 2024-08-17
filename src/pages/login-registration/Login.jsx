@@ -38,12 +38,12 @@ const Login = () => {
             })
             .catch(err => {
                 console.log(err);
-                
+
                 toast.error('auth/invalid-credential');
             })
     }
 
-    
+
 
 
     return (
@@ -67,21 +67,24 @@ const Login = () => {
                             <input className="block w-full px-4 py-2 mt-2 text-gray-700  bg-white border rounded-lg  border-gray-600 placeholder-gray-400 focus:border-blue-400  focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" name="password" aria-label="Password" />
                         </div>
 
-                        <div className="flex items-center justify-between mt-4">
+                        <div className=" mt-4">
                             {/* <button onClick={handelGoogle} className="flex items-center gap-2 border px-2 py-1 rounded-lg border-blue-500 text-sm font-medium text-blue-500">Sign In with<FcGoogle className="text-2xl" /></button> */}
-                            <SocialLogin page={page} />
 
-                            <button type="submit" className="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+
+                            <button type="submit" className="w-full px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Sign In
                             </button>
                         </div>
                     </form>
                 </div>
+                    <div className="flex justify-center">
+                        <SocialLogin page={page} />
+                    </div>
 
                 <div className="flex items-center justify-center py-4 text-center bg-gray-50 ">
                     <span className="text-sm text-gray-600 ">Do not have an account? </span>
 
-                    <Link to= '/register' className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign Up</Link>
+                    <Link to='/register' className="mx-2 text-sm font-bold text-blue-500  hover:underline">Sign Up</Link>
                 </div>
             </div>
         </div>

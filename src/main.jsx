@@ -14,6 +14,7 @@ import AuthProvider from './auth/AuthProvider';
 import { Toaster } from 'react-hot-toast';
 import ProductList from './pages/home/Products';
 import Bookmark from './pages/bookmark/Bookmark';
+import PrivateRoute from './auth/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -27,11 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/products',
-        element: <ProductList />
+        element: <PrivateRoute><ProductList /></PrivateRoute>
       },
       {
         path: '/bookmarks',
-        element: <Bookmark />
+        element: <PrivateRoute><Bookmark /></PrivateRoute>
       },
       {
         path: '/login',
