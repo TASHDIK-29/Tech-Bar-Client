@@ -41,7 +41,7 @@
     },
     {
       "ProductName": "Samsung Galaxy Book Pro",
-      "Image": "https://img.freepik.com/free-photo/close-up-pen-with-phone_23-2150835654.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Image": "https://img.freepik.com/free-photo/laptop-device-with-minimalist-monochrome-background_23-2150763336.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A lightweight and powerful laptop with an AMOLED display.",
       "Price": 1350.00,
       "Category": "Laptop",
@@ -51,7 +51,7 @@
     },
     {
       "ProductName": "Google Pixelbook Go",
-      "Image": "https://img.freepik.com/premium-vector/realistic-tablet-pc-vector-illustration-trendy-thin-frame-design-with-front-back-side-view_174496-486.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Image": "https://img.freepik.com/premium-photo/macbook-pro-laptop-with-picture-mountains-screen_1191871-65563.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A sleek Chromebook designed for high performance and portability.",
       "Price": 849.99,
       "Category": "Laptop",
@@ -94,7 +94,7 @@
       "Image": "https://img.freepik.com/free-photo/computer-monitor-mouse-gray-background-3d-render-illustration_1142-59607.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A compact desktop with the powerful M2 chip for professionals.",
       "Price": 699.99,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Apple",
       "Ratings": 4.8,
       "ProductCreationDate": "2022-11-10"
@@ -111,7 +111,7 @@
     },
     {
       "ProductName": "Google Pixel Slate",
-      "Image": "https://img.freepik.com/free-vector/abstract-shape-mobile-wallpapers_23-2147661935.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Image": "https://img.freepik.com/premium-photo/tablet-pro-mockup-simple-style_1029473-615242.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A powerful tablet that transforms into a laptop with a detachable keyboard.",
       "Price": 999.00,
       "Category": "Tab",
@@ -124,7 +124,7 @@
       "Image": "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706519.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A sleek all-in-one desktop with Retina display and M1 chip.",
       "Price": 1799.00,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Apple",
       "Ratings": 4.9,
       "ProductCreationDate": "2022-08-30"
@@ -141,7 +141,7 @@
     },
     {
       "ProductName": "Google Pixel C",
-      "Image": "https://img.freepik.com/free-psd/mobile-phone-mock-up-design_1297-1.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Image": "https://img.freepik.com/premium-photo/black-case-with-stand-holding-tablet-with-black-stylus_14117-833472.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A high-performance Android tablet with a detachable keyboard.",
       "Price": 499.00,
       "Category": "Tab",
@@ -154,7 +154,7 @@
       "Image": "https://img.freepik.com/free-photo/view-computer-monitor-display_23-2150757465.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A desktop powerhouse for professionals demanding top performance.",
       "Price": 5999.99,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Apple",
       "Ratings": 4.9,
       "ProductCreationDate": "2022-05-15"
@@ -204,7 +204,7 @@
       "Image": "https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706455.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A smart speaker with high-fidelity sound and Google Assistant built-in.",
       "Price": 299.00,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Google",
       "Ratings": 4.7,
       "ProductCreationDate": "2022-01-10"
@@ -274,7 +274,7 @@
       "Image": "https://img.freepik.com/premium-psd/apple-monitor-with-an-image-showing_917048-1685.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A powerful all-in-one desktop with Retina display and advanced features.",
       "Price": 4999.99,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Apple",
       "Ratings": 4.9,
       "ProductCreationDate": "2021-06-10"
@@ -294,7 +294,7 @@
       "Image": "https://img.freepik.com/free-photo/3d-rendering-computer-desk_23-2151004363.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A smart speaker with rich sound and Google Assistant built-in.",
       "Price": 99.00,
-      "Category": "Computer",
+      "Category": "Monitor",
       "Brand": "Google",
       "Ratings": 4.5,
       "ProductCreationDate": "2021-04-15"
@@ -308,6 +308,16 @@
       "Brand": "Apple",
       "Ratings": 4.8,
       "ProductCreationDate": "2021-03-20"
+    },
+    {
+      "ProductName": "Samsung Galaxy Tab 9R",
+      "Image": "https://img.freepik.com/free-psd/tablet-mock-up-design_1310-59.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Description": "An affordable tablet with a 10.4-inch display and Dolby Atmos sound.",
+      "Price": 529.99,
+      "Category": "Tab",
+      "Brand": "Samsung",
+      "Ratings": 4,
+      "ProductCreationDate": "2022-08-24"
     },
     {
       "ProductName": "Samsung Galaxy Book Flex2",
@@ -341,7 +351,7 @@
     },
     {
       "ProductName": "Samsung Galaxy Tab S6 Lite",
-      "Image": "https://img.freepik.com/free-photo/tablet-minimal-display-wooden-surface_23-2149554968.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
+      "Image": "https://img.freepik.com/free-vector/digital-device-mockup_53876-89346.jpg?uid=R141467370&ga=GA1.1.221420494.1715600354&semt=ais_hybrid",
       "Description": "A mid-range tablet with S Pen included and an immersive display.",
       "Price": 349.99,
       "Category": "Tab",

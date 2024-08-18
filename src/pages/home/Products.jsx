@@ -100,7 +100,7 @@ const ProductList = () => {
                     <h4 className='font-semibold'>Filter by Category</h4>
                     <select className='border-2 p-2 bg-slate-300 w-full shadow-md' value={category} onChange={(e) => { setCategory(e.target.value); setCurrentPage(0); }}>
                         <option value="">Select Category</option>
-                        <option value="Computer">Computer</option>
+                        <option value="Monitor">Monitor</option>
                         <option value="Laptop">Laptop</option>
                         <option value="Tab">Tab</option>
                         <option value="Mobile">Mobile</option>
