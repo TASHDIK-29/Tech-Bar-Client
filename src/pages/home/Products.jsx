@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard';
 import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
+import Lottie from 'lottie-react';
+import noData from '../../assets/noData.json'
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -18,7 +20,7 @@ const ProductList = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
-
+    console.log(products);
 
 
     const fetchProducts = async () => {
@@ -224,6 +226,13 @@ const ProductList = () => {
                             // </div>
                             <ProductCard key={idx} product={product} />
                         ))}
+                </div>
+                <div>
+                    {
+                        products.length === 0 && !isLoading && <div className="flex justify-center items-center">
+                            <Lottie className="w-1/2 md:w-1/3" animationData={noData} />
+                        </div>
+                    }
                 </div>
             </div>
             <div className="absolute -bottom-16 w-full space-y-1">
