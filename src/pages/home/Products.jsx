@@ -71,7 +71,7 @@ const ProductList = () => {
     }
 
     return (
-        <div className={`relative ${products.length < 3 && 'h-[80vh]'} pb-10`}>
+        <div className={`relative ${products.length < 3 && 'md:h-[80vh]'} pb-10`}>
             <div className='grid grid-cols-2 md:grid-cols-7 gap-2 mt-8'>
                 <div className='col-span-2'>
                     <h4 className='font-semibold'>Search By Name</h4>
